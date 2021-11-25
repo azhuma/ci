@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ipworks3ds">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ipworks3ds.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/ipworks3ds.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

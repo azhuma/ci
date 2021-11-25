@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="ipworks3ds" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.13.0-rc1" level="project" />
   </component>
 </module>
