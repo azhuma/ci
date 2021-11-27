@@ -101,11 +101,14 @@ public class TestDemo {
     private static void testMcAReq(Server server, Map<String, Object> request) throws Exception {
         server.config("ProtocolVersion=" + request.get("messageVersion").toString());
         server.config("MethodCompletionIndicator=" + request.get("threeDSCompInd").toString());
-        server.config("RequestorChallengeInd=" + request.get("threeDSRequestorChallengeInd").toString());
+
         server.setAccountType(request.get("acctType").toString());
         server.config("AddressMatch=" + request.get("addrMatch").toString());
-        server.setBrowserIPAddress(request.get("browserIP").toString());
         server.config("AccountId=" + request.get("acctID").toString());
+
+        server.config("RequestorChallengeInd=" + request.get("threeDSRequestorChallengeInd").toString());
+        server.config("DecoupledRequestIndicator=" + request.get("threeDSRequestorDecReqInd").toString());
+
 
         server.setCardholderName(request.get("cardholderName").toString());
         Map<String, Object> workPhone = (Map<String, Object>) request.get("workPhone");
@@ -211,6 +214,7 @@ public class TestDemo {
         server.setBrowserScreenColorDepth(request.get("browserColorDepth").toString());
         server.setBrowserTimeZone(request.get("browserTZ").toString());
         server.setBrowserUserAgent(request.get("browserUserAgent").toString());
+        server.setBrowserIPAddress(request.get("browserIP").toString());
 
         server.setCardNumber(request.get("acctNumber").toString());
         server.setCardExpDate(request.get("cardExpiryDate").toString());
