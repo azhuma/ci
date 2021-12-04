@@ -8,6 +8,7 @@ public class TestDemo {
 
     public static void main(String[] args) throws Exception {
         Server server = new Server();
+        System.out.println("Hello world!");
         server.config("ProtocolVersion=2.2.0");
 
         String cacertsPath = System.getProperty("java.home") + "\\lib\\security\\cacerts";
